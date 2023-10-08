@@ -11,5 +11,67 @@
 				<h1>Register Here</h1>
 			</nav>
 		</header>
+		<main>
+			<form>
+				<table>
+					<tr>
+						<td>First Name</td>
+						<td><input type='text' placeholder='First Name' required /></td>
+					</tr>
+					<tr>
+						<td>Last Name</td>
+						<td><input type='text' placeholder='Last Name' required /></td>
+					</tr>
+					<tr>
+						<td>Mobile No</td>
+						<td><input type='text' pattern='[0-9]{10}' placeholder='0123456789' required /></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type='password' placeholder='Password' required /></td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td><textarea rows='4' cols='20'></textarea></td>
+					</tr>
+					<tr>
+						<td>Birthdate</td>
+						<td><input type='date' /></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td><input type='radio' name='gender' value='male'/> Male
+						<input type='radio' name='gender' value='female'/> Female
+						<input type='radio' name='gender' value='other'/> Other</td>
+					</tr>
+					<tr>
+						<td>Interested</td>
+						<td>
+							<select>
+								<option>Select Your Choice</option>
+								<option value='Cricket'>Cricket</option>
+								<option value='Vollyball'>Vollyball</option>
+								<option value='Football'>Football</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Upload Your Profile Picture (Only .jpg)</td>
+						<td><input type='file' accept=".jpg" /></td>
+					</tr>
+					<tr>
+						<td><input type='checkbox'/>I agree by filling this form i agree to <a href=''>terms & conditions</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type='submit' value='Submit' />
+							<input type='reset' value='Reset' />
+						</td>
+					</tr>
+				</table>
+			</form>
+			Already Registered ? <a href='login.html'>Click Here</a>
+		</main>
 	</body>
 </html>
