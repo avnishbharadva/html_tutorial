@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(233, 244, 255);
+}
+#header{
+    width: 90%;
+    height: 170px;
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    margin: 2rem auto;
+    display: flex;
+    /* place-items: center; */
+    justify-content: space-around;
+}
+
+#header_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#header_title h1{
+    font-size: 2rem;
+    color: rgb(66, 66, 66);
+}
+#header_title p{
+    font-size: 1.09rem;
+    color: rgb(91, 91, 91);
+}
+
+#header_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#header_details a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+}
