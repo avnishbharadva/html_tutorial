@@ -24,7 +24,7 @@ body{
 }
 #header_title h1{
     font-size: 2rem;
-    color: rgb(66, 66, 66);
+    color: rgb(99, 99, 255);
 }
 #header_title p{
     font-size: 1.09rem;
@@ -40,4 +40,47 @@ body{
     text-decoration: none;
     color: rgb(66, 66, 66);
     font-size: 1.1rem;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(66, 66, 66);
+    padding: 1rem;
+}
+main h2{
+    color: rgb(99, 99, 255);
+}
+.objective h2{
+    margin: 1rem 0;
+}
+.objective p{
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.education h2,.skill h2,.projects h2,.lang h2{
+    margin-top: 3rem;
+}
+.education table,.skill table,.lang table{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+.education table td,.skill table td,.lang table td{
+    padding: 1rem 0;
+}
+
+.projects .pro_detail{
+    margin: 2rem 0;
+}
+.projects h4{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.projects p{
+    padding: 0 0.8rem;
+    font-size: 0.9rem;
 }
