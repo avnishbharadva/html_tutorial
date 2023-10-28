@@ -3,7 +3,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 #navbar{
     background-color: blueviolet;
     width: 100vw;
@@ -11,6 +10,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
+    position: fixed;
 }
 #navbar li{
     list-style-type: none;
