@@ -1,7 +1,10 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    border: 1px solid blueviolet;
 }
 #navbar{
     background-color: blueviolet;
@@ -49,4 +52,73 @@
     padding-top: 10px;
     color: rgb(93, 93, 93);
     /* text-align: justify; */
+}
+#education{
+    background-color: rgb(235, 213, 255);
+}
+#education h2{
+    text-align: center;
+    color: rgb(132, 0, 255);
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+#education .edu_det{
+    background-color: rgb(157, 67, 241);
+    color: white;
+    width: 30rem;
+    height: 13rem;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.edu_grid{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.edu_det h3{
+    margin: 0.7rem 0;
+    font-size: 1.3rem;
+}
+#projects{
+    background-color: rgb(235, 213, 255);
+}
+#projects h2{
+    text-align: center;
+    color: rgb(132, 0, 255);
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
+#projects .pro_det{
+    background-color: rgb(157, 67, 241);
+    color: white;
+    width: 30rem;
+    height: 28rem;
+    margin: 1.8rem 1.1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pro_grid{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.pro_det h3{
+    margin: 0.7rem 0;
+    font-size: 1.3rem;
+}
+.pro_det p{
+    font-size: 0.9rem;
 }
