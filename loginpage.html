@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<style>
+			.required:after{
+				content : " *";
+				color : red;
+			}
+			input:valid{
+				border: 2px solid black;
+			}
+			input:invalid{
+				border : 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="welcome.html" onsubmit="return validationform();">
+			<label for="username" class="required">Username :</label>
+			<input type="text" id="username" pattern="[A-Z][A-Za-z0-9_\.]{7,14}" title="Username only contain letters, numbers, underscores, and periods." required>
+			<input type="submit" value="Submit">
+		</form>
+		<script>
+			function validationform()
+			{
+				const username = document.getElementById("username").value;
+			
+				const confirmation = confirm("Are you sure want to submit the form?");
+				if(confirmation){
+					alert("Login Successful");	
+					return true;
+				}
+				return false;
+			}
+		</script>
+	</body>
+</html>
