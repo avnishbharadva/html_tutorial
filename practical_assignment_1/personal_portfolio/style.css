@@ -29,6 +29,10 @@ hr{
     color: white;
     text-decoration: none;
 }
+#navbar li a:hover{
+    color: hsl(240, 100%, 92%);
+    transition: 0.2s;
+}
 
 #about{
     background-color: rgb(235, 213, 255);
