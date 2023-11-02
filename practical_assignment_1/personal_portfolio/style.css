@@ -8,12 +8,12 @@ hr{
 }
 #navbar{
     background-color: blueviolet;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
-    position: fixed;
+    /* position: fixed; */
 }
 #navbar li{
     list-style-type: none;
