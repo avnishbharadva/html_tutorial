@@ -1,0 +1,35 @@
+<!-- Write a JavaScript program to find the largest among three given numbers. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find the largest number</title>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="num1" placeholder="Enter Num 1"><br><br>
+			<input type="text" id="num2" placeholder="Enter Num 2"><br><br>
+			<input type="text" id="num3" placeholder="Enter Num 3"><br><br>
+			<input type="button" value="Find Max" onclick="findMax();">
+		</form>
+		<div id="ans">
+		<div>
+		<script>
+			function findMax()
+			{
+				let n1 = document.getElementById('num1').value;
+				let n2 = document.getElementById('num2').value;
+				let n3 = document.getElementById('num3').value;
+				//console.log(n1,n2,n3)
+				let ans = document.getElementById('ans');
+				
+				if(n1>n2 && n1>n3)
+					ans.innerHTML = "Max Number : " + n1;
+				else if(n2>n3)
+					ans.innerHTML = "Max Number : " + n2;
+				else
+					ans.innerHTML = "Max Number : " + n3;
+			}
+		</script>
+	</body>
+</html>
