@@ -1,0 +1,44 @@
+<!-- Write a JavaScript program to display the current date and time on the click event of the two buttons
+labelled date and time. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date & Time</title>
+    <style>
+        .main{
+            text-align: center;
+            font-size: 35px;
+        }
+        .main button{
+            font-size: 30px;
+            margin: 30px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="datetime">
+            <button onclick="showDate()">Date</button>
+            <button onclick="showTime()">Time</button>
+        </div>
+        <div id="displaydt">
+        </div>
+    </div>
+
+    <script>
+        let d = new Date();
+        let displaydt = document.getElementById('displaydt');
+
+        function showDate() {
+            displaydt.innerHTML = "Current Date : " + d.toDateString();
+        }
+        function showTime() {
+            displaydt.innerHTML = "Current Time : " + d.toLocaleTimeString();
+        }
+    </script>
+</body>
+
+</html>
