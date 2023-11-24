@@ -63,9 +63,10 @@ the reset button, all the data provided by the user in fields will get clear.
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="reset" value="Clear"></td>
+                    <td><input type="reset" value="Reset"></td>
                 </tr>
             </table>
+            <div id="err" class="error"></div>
         </form>
     </div>
 
@@ -79,16 +80,28 @@ the reset button, all the data provided by the user in fields will get clear.
             var add = document.getElementById('address').value;
             var fnameerr = document.getElementById('fnameerr');
             var mnerr = document.getElementById('mnerr');
+            var err = document.getElementById('err');
 
             console.log(fname.length)
+
+            if(fname.length==0 || lname.length==0 || pass.length==0 || email.length==0 || add.length==0){
+                err.innerHTML = "<h2>All Fields are Required.</h2>"
+                return false;
+            }
             if (fname.length < 6) {
-                fnameerr.innerHTML = " Name should contains alphabets and the length should not be less than 6 characters"
+                err.innerHTML = "<h2>Name should contains alphabets and the length should not be less than 6 characters</h2>"
+                return false;
+            }
+            if(pass.length < 6){
+                err.innerHTML = "<h2>Password should not be less than 6 characters length.</h2>"
                 return false;
             }
             if(mnum.length != 10 || isNaN(mnum)){
-                mnerr.innerHTML = " Phone number should contain 10 digits only"
+                err.innerHTML = "<h2>Phone number should contain 10 digits only</h2>"
                 return false;
             }
+
+            alert("Login Successful...");
         }
     </script>
 </body>
